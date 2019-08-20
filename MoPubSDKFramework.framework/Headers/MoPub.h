@@ -46,6 +46,9 @@
 #import "MPRewardedVideoError.h"
 #import "MPViewabilityAdapter.h"
 #import "MPViewabilityOption.h"
+#import "MPBaseBannerAdapter.h"
+#import "MPBaseInterstitialAdapter.h"
+#import "MPRewardedVideoAdapter.h"
 
 #if MP_HAS_NATIVE_PACKAGE
 #import "MPNativeAd.h"
@@ -77,9 +80,6 @@
 #import "MPNativeAdRenderingImageLoader.h"
 #import "MPStreamAdPlacer.h"
 #import "MPStreamAdPlacerDelegate.h"
-#import "MPBaseBannerAdapter.h"
-#import "MPBaseInterstitialAdapter.h"
-#import "MPRewardedVideoAdapter.h"
 #endif
 
 // Import these frameworks for module support.
