@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
                             To learn more or sign up for an account, go to http://www.mopub.com. \n
                           DESC
   spec.social_media_url = 'http://twitter.com/mopub'
-  spec.source           = { :git => 'git@github.com:VoodooTeam/mopub-sniffer-ios-framework.git', :tag => s.version.to_s }
+  spec.source           = { :git => 'git@github.com:VoodooTeam/mopub-sniffer-ios-framework.git', :tag => spec.version.to_s }
   spec.requires_arc     = true
   spec.ios.deployment_target = '8.0'
   spec.frameworks       = [
@@ -42,6 +42,7 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'Core' do |core|
+    core.source_files  = 'MoPubSDKFramework.framework/**/*.h'
     core.resources            = ['MoPubSDKFramework.framework/*.{png,bundle,xib,nib}', 'MoPubSDKFramework.framework/MPAdapters.plist']
     core.public_header_files  = 'MoPubSDKFramework.framework/**/*.h'
     core.preserve_paths       = 'MoPubSDKFramework.framework'
@@ -49,4 +50,3 @@ Pod::Spec.new do |spec|
   end
 
 end
-
